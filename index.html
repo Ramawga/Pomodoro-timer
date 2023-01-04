@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="relogio.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1>Pomodoro Timer</h1>
+        </div>
+    </header>
+    <section>
+        <div class="center">
+            <div class="box">
+                <div class="config">
+                    <i id="configbtn" class="fa-solid fa-gear" onclick="mostrarConfig()"></i>
+                </div>
+                <div class="botoes">
+                    <p id="pomodoro">Pomodoro</p>
+                    <p id="pausa">Pausa</p>
+                </div><!--botoes-->
+                <div class="timer">
+                    <p id="min"></p>
+                    <p>:</p>
+                    <p id="sec"></p>
+                </div><!--timer-->
+                <button id="botao" onclick="comecar()"> Começar! </button>
+            </div><!--box-->
+            <div class="box-config">
+                <h1>Tempo de ação</h1>
+                <input type="number" min="1" id="inputAcao">
+                <h1>Tempo de pausa</h1>
+                <input type="number" min="1" id="inputPausa">
+                <button id="botao2" onclick="voltar()"> Voltar! </button>
+            </div>
+            <div class="barra">
+                <div class="progresso">
+
+                </div>
+            </div><!--barra-->
+        </div><!--center-->
+    </section>
+    <footer>
+        <div class="center">
+            <p>&copy;LucasRamayana</p>
+        </div>
+    </footer>
+    <script src="js/hacktimer.js"></script>
+    <script src="js/func.js"></script>
+    <script src="https://kit.fontawesome.com/1e467e3d5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
